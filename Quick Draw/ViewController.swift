@@ -20,22 +20,40 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
     
     let drawing = PKDrawing()
     
+    var undoedStrokes = [PKStroke]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveButtonClicked))
+        let saveButton = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.down"), style: .plain, target: self, action: #selector(saveButtonClicked))
         
         let trashButton = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(trashButtonClicked))
         
-        self.navigationItem.rightBarButtonItem = saveButton
-        self.navigationItem.leftBarButtonItem = trashButton
+        let undoButton = UIBarButtonItem(image: UIImage(systemName: "arrow.uturn.left"), style: .plain, target: self, action: #selector(undoButtonClicked))
+        
+        let forwardButton = UIBarButtonItem(image: UIImage(systemName: "arrow.uturn.right"), style: .plain, target: self, action: #selector(forwardButtonClicked))
+        
+        self.navigationItem.rightBarButtonItems = [saveButton, trashButton]
+        self.navigationItem.leftBarButtonItems = [forwardButton, undoButton]
         
         canvasView.delegate = self
         
         view.addSubview(canvasView)
     }
     var image = UIImageView()
+    
+    @objc func undoButtonClicked() {
+        if(canvasView.drawing.strokes.isEmpty == false) {
+            undoedStrokes.append(canvasView.drawing.strokes.popLast()!)
+        }
+    }
+    
+    @objc func forwardButtonClicked() {
+        if(undoedStrokes.isEmpty == false) {
+            canvasView.drawing.strokes.append(undoedStrokes.popLast()!)
+        }
+    }
     
     @objc func saveButtonClicked() {
         let saveImageViewRoot = UIViewController()
@@ -57,12 +75,19 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
     }
     
     @objc func trashButtonClicked() {
-        canvasView.drawing = PKDrawing()
+        canvasView.drawing.strokes.removeAll()
+        undoedStrokes.removeAll()
     }
     
     @objc func saveToCameraRollButtonClicked() {
         UIImageWriteToSavedPhotosAlbum(image.image!, nil, nil, nil)
         self.dismiss(animated: true, completion: nil)
+        let alert = UIAlertController(title: nil, message: "Drawing Saved to Camera Roll", preferredStyle: .actionSheet)
+        self.present(alert, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+          alert.dismiss(animated: true)
+        }
+        displayToolPicker()
     }
     
     @objc func shareButtonClicked() {
@@ -70,6 +95,7 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
         let activityViewController = UIActivityViewController(activityItems: [image.image!], applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         self.present(activityViewController, animated: true)
+        displayToolPicker()
     }
 
     override func viewDidLayoutSubviews() {
@@ -80,15 +106,19 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
     
     @objc func cancelButtonClicked() {
         self.dismiss(animated: true, completion: nil)
+        displayToolPicker()
     }
 
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-           toolPicker.setVisible(true, forFirstResponder: canvasView)
-           toolPicker.addObserver(canvasView)
-           canvasView.becomeFirstResponder()
+        displayToolPicker()
+    }
     
+    func displayToolPicker() {
+        toolPicker.setVisible(true, forFirstResponder: canvasView)
+        toolPicker.addObserver(canvasView)
+        canvasView.becomeFirstResponder()
     }
     
     func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
