@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F60F80FD2850E5420032B609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F80FC2850E5420032B609 /* AppDelegate.swift */; };
+		F60F80FF2850E5420032B609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F80FE2850E5420032B609 /* SceneDelegate.swift */; };
+		F60F81012850E5420032B609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F81002850E5420032B609 /* ViewController.swift */; };
+		F60F81042850E5420032B609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60F81022850E5420032B609 /* Main.storyboard */; };
+		F60F81062850E5430032B609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60F81052850E5430032B609 /* Assets.xcassets */; };
+		F60F81092850E5430032B609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60F81072850E5430032B609 /* LaunchScreen.storyboard */; };
+		F60F81142850E5430032B609 /* Quick_DrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F81132850E5430032B609 /* Quick_DrawTests.swift */; };
+		F60F811E2850E5430032B609 /* Quick_DrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F811D2850E5430032B609 /* Quick_DrawUITests.swift */; };
+		F60F81202850E5430032B609 /* Quick_DrawUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F811F2850E5430032B609 /* Quick_DrawUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F60F81102850E5430032B609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F60F80F12850E5420032B609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60F80F82850E5420032B609;
+			remoteInfo = "Quick Draw";
+		};
+		F60F811A2850E5430032B609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F60F80F12850E5420032B609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60F80F82850E5420032B609;
+			remoteInfo = "Quick Draw";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F60F80F92850E5420032B609 /* Quick Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Draw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60F80FC2850E5420032B609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F60F80FE2850E5420032B609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F60F81002850E5420032B609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F60F81032850E5420032B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F60F81052850E5430032B609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F60F81082850E5430032B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F60F810A2850E5430032B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60F810F2850E5430032B609 /* Quick DrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick DrawTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60F81132850E5430032B609 /* Quick_DrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_DrawTests.swift; sourceTree = "<group>"; };
+		F60F81192850E5430032B609 /* Quick DrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick DrawUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60F811D2850E5430032B609 /* Quick_DrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_DrawUITests.swift; sourceTree = "<group>"; };
+		F60F811F2850E5430032B609 /* Quick_DrawUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_DrawUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F60F80F62850E5420032B609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F810C2850E5430032B609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F81162850E5430032B609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F60F80F02850E5420032B609 = {
+			isa = PBXGroup;
+			children = (
+				F60F80FB2850E5420032B609 /* Quick Draw */,
+				F60F81122850E5430032B609 /* Quick DrawTests */,
+				F60F811C2850E5430032B609 /* Quick DrawUITests */,
+				F60F80FA2850E5420032B609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F60F80FA2850E5420032B609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F60F80F92850E5420032B609 /* Quick Draw.app */,
+				F60F810F2850E5430032B609 /* Quick DrawTests.xctest */,
+				F60F81192850E5430032B609 /* Quick DrawUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F60F80FB2850E5420032B609 /* Quick Draw */ = {
+			isa = PBXGroup;
+			children = (
+				F60F80FC2850E5420032B609 /* AppDelegate.swift */,
+				F60F80FE2850E5420032B609 /* SceneDelegate.swift */,
+				F60F81002850E5420032B609 /* ViewController.swift */,
+				F60F81022850E5420032B609 /* Main.storyboard */,
+				F60F81052850E5430032B609 /* Assets.xcassets */,
+				F60F81072850E5430032B609 /* LaunchScreen.storyboard */,
+				F60F810A2850E5430032B609 /* Info.plist */,
+			);
+			path = "Quick Draw";
+			sourceTree = "<group>";
+		};
+		F60F81122850E5430032B609 /* Quick DrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				F60F81132850E5430032B609 /* Quick_DrawTests.swift */,
+			);
+			path = "Quick DrawTests";
+			sourceTree = "<group>";
+		};
+		F60F811C2850E5430032B609 /* Quick DrawUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F60F811D2850E5430032B609 /* Quick_DrawUITests.swift */,
+				F60F811F2850E5430032B609 /* Quick_DrawUITestsLaunchTests.swift */,
+			);
+			path = "Quick DrawUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F60F80F82850E5420032B609 /* Quick Draw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60F81232850E5430032B609 /* Build configuration list for PBXNativeTarget "Quick Draw" */;
+			buildPhases = (
+				F60F80F52850E5420032B609 /* Sources */,
+				F60F80F62850E5420032B609 /* Frameworks */,
+				F60F80F72850E5420032B609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quick Draw";
+			productName = "Quick Draw";
+			productReference = F60F80F92850E5420032B609 /* Quick Draw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F60F810E2850E5430032B609 /* Quick DrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60F81262850E5430032B609 /* Build configuration list for PBXNativeTarget "Quick DrawTests" */;
+			buildPhases = (
+				F60F810B2850E5430032B609 /* Sources */,
+				F60F810C2850E5430032B609 /* Frameworks */,
+				F60F810D2850E5430032B609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F60F81112850E5430032B609 /* PBXTargetDependency */,
+			);
+			name = "Quick DrawTests";
+			productName = "Quick DrawTests";
+			productReference = F60F810F2850E5430032B609 /* Quick DrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F60F81182850E5430032B609 /* Quick DrawUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60F81292850E5430032B609 /* Build configuration list for PBXNativeTarget "Quick DrawUITests" */;
+			buildPhases = (
+				F60F81152850E5430032B609 /* Sources */,
+				F60F81162850E5430032B609 /* Frameworks */,
+				F60F81172850E5430032B609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F60F811B2850E5430032B609 /* PBXTargetDependency */,
+			);
+			name = "Quick DrawUITests";
+			productName = "Quick DrawUITests";
+			productReference = F60F81192850E5430032B609 /* Quick DrawUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F60F80F12850E5420032B609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F60F80F82850E5420032B609 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F60F810E2850E5430032B609 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F60F80F82850E5420032B609;
+					};
+					F60F81182850E5430032B609 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F60F80F82850E5420032B609;
+					};
+				};
+			};
+			buildConfigurationList = F60F80F42850E5420032B609 /* Build configuration list for PBXProject "Quick Draw" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F60F80F02850E5420032B609;
+			productRefGroup = F60F80FA2850E5420032B609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F60F80F82850E5420032B609 /* Quick Draw */,
+				F60F810E2850E5430032B609 /* Quick DrawTests */,
+				F60F81182850E5430032B609 /* Quick DrawUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F60F80F72850E5420032B609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60F81092850E5430032B609 /* LaunchScreen.storyboard in Resources */,
+				F60F81062850E5430032B609 /* Assets.xcassets in Resources */,
+				F60F81042850E5420032B609 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F810D2850E5430032B609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F81172850E5430032B609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F60F80F52850E5420032B609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60F81012850E5420032B609 /* ViewController.swift in Sources */,
+				F60F80FD2850E5420032B609 /* AppDelegate.swift in Sources */,
+				F60F80FF2850E5420032B609 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F810B2850E5430032B609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60F81142850E5430032B609 /* Quick_DrawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F81152850E5430032B609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60F81202850E5430032B609 /* Quick_DrawUITestsLaunchTests.swift in Sources */,
+				F60F811E2850E5430032B609 /* Quick_DrawUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F60F81112850E5430032B609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F60F80F82850E5420032B609 /* Quick Draw */;
+			targetProxy = F60F81102850E5430032B609 /* PBXContainerItemProxy */;
+		};
+		F60F811B2850E5430032B609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F60F80F82850E5420032B609 /* Quick Draw */;
+			targetProxy = F60F811A2850E5430032B609 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F60F81022850E5420032B609 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60F81032850E5420032B609 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F60F81072850E5430032B609 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60F81082850E5430032B609 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F60F81212850E5430032B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F60F81222850E5430032B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F60F81242850E5430032B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S36BMS68K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quick Draw/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EricZhang.Quick-Draw";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F60F81252850E5430032B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S36BMS68K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quick Draw/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EricZhang.Quick-Draw";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F60F81272850E5430032B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S36BMS68K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EricZhang.Quick-DrawTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Draw.app/Quick Draw";
+			};
+			name = Debug;
+		};
+		F60F81282850E5430032B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S36BMS68K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EricZhang.Quick-DrawTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Draw.app/Quick Draw";
+			};
+			name = Release;
+		};
+		F60F812A2850E5430032B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S36BMS68K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EricZhang.Quick-DrawUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quick Draw";
+			};
+			name = Debug;
+		};
+		F60F812B2850E5430032B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S36BMS68K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EricZhang.Quick-DrawUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quick Draw";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F60F80F42850E5420032B609 /* Build configuration list for PBXProject "Quick Draw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60F81212850E5430032B609 /* Debug */,
+				F60F81222850E5430032B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60F81232850E5430032B609 /* Build configuration list for PBXNativeTarget "Quick Draw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60F81242850E5430032B609 /* Debug */,
+				F60F81252850E5430032B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60F81262850E5430032B609 /* Build configuration list for PBXNativeTarget "Quick DrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60F81272850E5430032B609 /* Debug */,
+				F60F81282850E5430032B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60F81292850E5430032B609 /* Build configuration list for PBXNativeTarget "Quick DrawUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60F812A2850E5430032B609 /* Debug */,
+				F60F812B2850E5430032B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F60F80F12850E5420032B609 /* Project object */;
+}
