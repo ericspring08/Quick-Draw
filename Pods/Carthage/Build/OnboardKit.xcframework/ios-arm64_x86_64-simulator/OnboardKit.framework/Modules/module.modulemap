@@ -1,0 +1,11 @@
+framework module OnboardKit {
+  umbrella header "OnboardKit.h"
+
+  export *
+  module * { export * }
+}
+
+module OnboardKit.Swift {
+    header "OnboardKit-Swift.h"
+    requires objc
+}

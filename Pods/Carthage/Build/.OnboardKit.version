@@ -1,0 +1,28 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v1.5.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "07ccbac4b91cfbfd4cad8fe2e7db7f763ce94d1a3901fbc929934ae48b624395",
+      "name" : "OnboardKit",
+      "container" : "OnboardKit.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "226b7f227b334c46cd733c2d6e960d61c81668227a6cae28e36dd71038c772b7",
+      "name" : "OnboardKit",
+      "container" : "OnboardKit.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}

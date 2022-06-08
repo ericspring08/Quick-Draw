@@ -1,0 +1,6 @@
+framework module Pods_Quick_DrawTests {
+  umbrella header "Pods-Quick DrawTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -30,3 +30,4 @@ class Quick_DrawUITestsLaunchTests: XCTestCase {
         add(attachment)
     }
 }
+
