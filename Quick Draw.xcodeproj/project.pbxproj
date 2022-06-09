@@ -19,7 +19,6 @@
 		F60F81142850E5430032B609 /* Quick_DrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F81132850E5430032B609 /* Quick_DrawTests.swift */; };
 		F60F811E2850E5430032B609 /* Quick_DrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F811D2850E5430032B609 /* Quick_DrawUITests.swift */; };
 		F60F81202850E5430032B609 /* Quick_DrawUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F811F2850E5430032B609 /* Quick_DrawUITestsLaunchTests.swift */; };
-		F60F812F28513F2B0032B609 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F60F812E28513F2B0032B609 /* Cartfile */; };
 		F60F8131285140160032B609 /* UserDefaults+isFirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F8130285140160032B609 /* UserDefaults+isFirstLaunch.swift */; };
 		F60F8133285142810032B609 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F60F8132285142810032B609 /* Podfile */; };
 /* End PBXBuildFile section */
@@ -64,7 +63,6 @@
 		F60F81192850E5430032B609 /* Quick DrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick DrawUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60F811D2850E5430032B609 /* Quick_DrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_DrawUITests.swift; sourceTree = "<group>"; };
 		F60F811F2850E5430032B609 /* Quick_DrawUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_DrawUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F60F812E28513F2B0032B609 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		F60F8130285140160032B609 /* UserDefaults+isFirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+isFirstLaunch.swift"; sourceTree = "<group>"; };
 		F60F8132285142810032B609 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,7 +105,6 @@
 				5A1E578558B07EEED81A0CD6 /* Pods-Quick DrawTests.debug.xcconfig */,
 				A0D7BAC8F261D6206DBFFAA6 /* Pods-Quick DrawTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -125,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				F60F8132285142810032B609 /* Podfile */,
-				F60F812E28513F2B0032B609 /* Cartfile */,
 				F60F80FB2850E5420032B609 /* Quick Draw */,
 				F60F81122850E5430032B609 /* Quick DrawTests */,
 				F60F811C2850E5430032B609 /* Quick DrawUITests */,
@@ -289,7 +285,6 @@
 				F60F8133285142810032B609 /* Podfile in Resources */,
 				F60F81092850E5430032B609 /* LaunchScreen.storyboard in Resources */,
 				F60F81062850E5430032B609 /* Assets.xcassets in Resources */,
-				F60F812F28513F2B0032B609 /* Cartfile in Resources */,
 				F60F81042850E5420032B609 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

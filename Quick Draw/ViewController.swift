@@ -59,14 +59,20 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
         
         let forwardButton = UIBarButtonItem(image: UIImage(systemName: "arrow.uturn.right"), style: .plain, target: self, action: #selector(forwardButtonClicked))
         
+        let copyButton = UIBarButtonItem(image: UIImage(systemName: "doc.on.clipboard"), style: .plain, target: self, action: #selector(copyButtonClicked))
+        
         self.navigationItem.rightBarButtonItems = [saveToCameraRollButton, shareButton, trashButton]
-        self.navigationItem.leftBarButtonItems = [forwardButton, undoButton]
+        self.navigationItem.leftBarButtonItems = [forwardButton, undoButton, copyButton]
         
         canvasView.delegate = self
         
         view.addSubview(canvasView)
     }
     var image = UIImageView()
+    
+    @objc func copyButtonClicked() {
+        UIPasteboard.general.image = canvasView.drawing.image(from: self.view.bounds, scale: 1.0)
+    }
     
     @objc func undoButtonClicked() {
         if(canvasView.drawing.strokes.isEmpty == false) {
@@ -86,7 +92,8 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
     }
     
     @objc func saveToCameraRollButtonClicked() {
-        UIImageWriteToSavedPhotosAlbum(canvasView.drawing.image(from: self.view.bounds, scale: 1.0), nil, nil, nil)
+        let photo = canvasView.drawing.image(from: self.view.bounds, scale: 1.0)
+        UIImageWriteToSavedPhotosAlbum(photo, nil, nil, nil)
         self.dismiss(animated: true, completion: nil)
         let alert = UIAlertController(title: nil, message: "Drawing Saved to Camera Roll", preferredStyle: .actionSheet)
         self.present(alert, animated: true)
