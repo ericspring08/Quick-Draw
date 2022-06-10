@@ -94,12 +94,14 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
     @objc func saveToCameraRollButtonClicked() {
         let photo = canvasView.drawing.image(from: self.view.bounds, scale: 1.0)
         UIImageWriteToSavedPhotosAlbum(photo, nil, nil, nil)
-        self.dismiss(animated: true, completion: nil)
-        let alert = UIAlertController(title: nil, message: "Drawing Saved to Camera Roll", preferredStyle: .actionSheet)
-        self.present(alert, animated: true)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-          alert.dismiss(animated: true)
-        }
+        self.dismiss(animated: true, completion: {
+            let alert = UIAlertController(title: nil, message: "Drawing Saved to Camera Roll", preferredStyle: .alert)
+            alert.popoverPresentationController?.sourceView = self.view;
+            self.present(alert, animated: true)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+              alert.dismiss(animated: true)
+            }
+        })
     }
     
     @objc func shareButtonClicked() {
